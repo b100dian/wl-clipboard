@@ -67,7 +67,7 @@ BuildArch:      noarch
 Zsh command line completion support for %{name}.
 
 %prep
-%setup -q
+%setup -n %{name}-%{version}/upstream/
 
 %build
 # This is kind of a hack IMHO because the wl-clipboard meson build scripts
