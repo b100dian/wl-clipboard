@@ -69,6 +69,8 @@ Zsh command line completion support for %{name}.
 %prep
 %setup -n %{name}-%{version}/upstream/
 
+%define _vpath_srcdir ${_vpath_srcdir}upstream
+
 %build
 # This is kind of a hack IMHO because the wl-clipboard meson build scripts
 # don't call pkg-config when they probably should
