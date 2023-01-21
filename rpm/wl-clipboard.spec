@@ -82,8 +82,6 @@ export CFLAGS="%{optflags} -I/usr/include/wayland"
 %meson_install
 
 %files
-%license COPYING
-%doc README.md
 %{_bindir}/wl-copy
 %{_bindir}/wl-paste
 %{_mandir}/man1/wl-clipboard.1.*
